@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 650px) {
+    .container {
+        height: 100vh;
+    }
+
+    .form-box {
+        width: 100%;
+        height: 70%;
+        bottom: 0;
+    }
+
+    .container.active .form-box {
+        right: 0;
+        bottom: 30%;
+    }
+
+    .toggle-box::before {
+        width: 100%;
+        height: 300%;
+        top: -270%;
+        left: 0;
+    }
+
+    .container.active .toggle-box::before {
+        top: 70%;
+        left: 0;
+    }
+
+    .toggle-panel {
+        width: 100%;
+        height: 30%;
+    }
+
+    .toggle-panel.toggle-left {
+        top: 0;
+    }
+
+    .container.active .toggle-panel.toggle-left {
+        top: -30%;
+        left: 0;
+    }
+
+    .toggle-panel.toggle-right {
+        right: 0;
+        bottom: -30%;
+    }
+
+    .container.active .toggle-panel.toggle-right {
+        bottom: 0;
+    }
+}

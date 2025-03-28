@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+@media screen  and (max-width: 730px) {
+    body {
+        width: 100vw;
+    }
+
+    .logo {
+        width: 10px;
+    }
+
+    .hero {
+        background: url(../imagens/tony-hawk-back-mobile.webp) no-repeat;
+        background-position: top center;
+    }
+
+    .nav-link {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+}

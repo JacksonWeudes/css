@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 769px) and (max-width: 992px){
+    .form-box {
+        width: 500px;
+    }
+
+    .input-box input {
+        width: 400px;
+    }
+
+    .login-button button {
+        width: 300px;
+    }
+}
+
