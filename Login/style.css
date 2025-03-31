@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 97vh;
+}
+
+main {
+    position: relative;
+
+    height: 500px;
+    width: 340px;
+    padding: 20px;
+    border: 1px solid rgb(3, 92, 22);
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+
+    width: 100%;
+    height: 30%;
+
+    background: #80008038;
+}
+
+.hero h1 {
+    font-size: 1.9em;
+    margin: 0;
+}
+
+
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: calc(100% - 30%);
+
+    background: #ffff0048;
+}
+
+.title h1 {
+    padding: 0;
+    margin: 0;
+
+    font-size: 1.8em;
+}
+
+.input-box {
+    margin: 10px;
+    padding: 2px 2px 2px 5px;
+    border: 1px solid #000;
+    border-radius: 40px;
+}
+
+.input-box input {
+    padding: 7px;
+    width: 230px;
+
+    border: none;
+    outline: none;
+    border-radius: 40px;
+}
+
+.login-btn button {
+    padding: 9px;
+    width: 280px;
+    margin: 0 0 10px 0;
+
+    border: none;
+    outline: none;
+    border-radius: 40px;
+
+    font-size: 1.2em;
+    font-weight: 500;
+
+    background: #0000ff4d;
+}
+
+.remenber-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+
+    font-size: .9em;
+}
+
+.remenber-forgot div {
+    padding-inline: 20px;
+}
+
+.desc p {
+    margin: 10px;
+    font-size: .9em;
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 100%;
+}
+
+.social-links a {
+    width: 50px;
+    height: 50px;
+
+    text-align: center;
+    line-height: 55px;
+    font-size: 1.5em;
+
+    border-radius: 10px;
+    border: 1px solid #000;
+}
