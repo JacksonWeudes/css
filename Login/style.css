@@ -4,22 +4,28 @@
 
 * {
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
 }
 
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 97vh;
+    height: 100vh;
+
+    background: #1b0101;
 }
 
 main {
     position: relative;
 
     height: 500px;
-    width: 340px;
-    padding: 20px;
-    border: 1px solid rgb(3, 92, 22);
+    width: 310px;
+    padding: 25px;
+
+    border-radius: 10px;
+    background: linear-gradient(90deg, #db3b36, #780400);
 }
 
 .hero {
@@ -36,7 +42,8 @@ main {
     width: 100%;
     height: 30%;
 
-    background: #80008038;
+    color: #fff;
+    background: transparent;
 }
 
 .hero h1 {
@@ -59,21 +66,26 @@ main {
     width: 100%;
     height: calc(100% - 30%);
 
-    background: #ffff0048;
-}
-
-.title h1 {
-    padding: 0;
-    margin: 0;
-
-    font-size: 1.8em;
+    border-radius: 40px 40px 5px 5px;
+    color: #000;
+    background: #dad8d8;
 }
 
 .input-box {
+    position: relative;
     margin: 10px;
-    padding: 2px 2px 2px 5px;
-    border: 1px solid #000;
+    padding: 2px 2px 2px 34px;
     border-radius: 40px;
+    background: #a80a05;
+}
+
+.input-box i {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+
+    font-size: 1.1em;
+    color: #fff;
 }
 
 .input-box input {
@@ -86,6 +98,8 @@ main {
 }
 
 .login-btn button {
+    position: relative;
+    cursor: pointer;
     padding: 9px;
     width: 280px;
     margin: 0 0 10px 0;
@@ -97,7 +111,29 @@ main {
     font-size: 1.2em;
     font-weight: 500;
 
-    background: #0000ff4d;
+    z-index: 1;
+    color: #fff;
+
+    transition: 0.2s ease;
+}
+
+.login-btn button::after {
+    content: "";
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    border-radius: 40px;
+    z-index: -1;
+    background: linear-gradient(90deg, #d42f29, #780400);
+}
+
+.login-btn button:active {
+    transform: scale(.9);
+    color: #f3605b;
 }
 
 .remenber-forgot {
@@ -111,12 +147,20 @@ main {
 }
 
 .remenber-forgot div {
-    padding-inline: 20px;
+    padding: 5px 20px 0 20px;
+}
+
+.remenber-forgot a {
+    text-decoration: none;
+    color: #000;
+}
+
+.remenber-forgot a:hover {
+    text-decoration: underline;
 }
 
 .desc p {
-    margin: 10px;
-    font-size: .9em;
+    margin-block: 30px 20px;
 }
 
 .social-links {
@@ -137,4 +181,15 @@ main {
 
     border-radius: 10px;
     border: 1px solid #000;
+    color: #a80a05;
+
+    transition: 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: scale(1.1);
+}
+
+.social-links a:active {
+    color: #f3605b;
 }
