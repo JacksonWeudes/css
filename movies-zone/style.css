@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    z-index: 1000;
+    background: #ff00006e;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px;
+}
+
+.enter-button {
+    padding: 10px;
+}
+
+.enter_button button {
+    width: 90px;
+    height: 35px;
+
+    border: none;
+    border-radius: 40px;
+}
+
+main {
+    height: auto;
+    background: rgba(0, 0, 255, 0.288);
+}
+
+.sign {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 80%;
+    height: 350px;
+    padding: 20px;
+    margin: auto;
+
+    text-align: center;
+    border: 1px solid #000;
+    background: rgba(0, 128, 0, 0.349);
+}
+
+.title {
+    margin-block-end: 25px;
+    border: 1px solid #000;
+}
+
+.desc {
+    margin-block-end: 10px;
+    border: 1px solid #000;
+}
+
+.input-form {
+    width: 100%;
+    margin-block-end: 10px;
+}
+
+.input-form input {
+    width: 95%;
+    padding: 10px;
+}
+
+.login-button {
+    width: 100%;
+}
+
+.login-button button {
+    width: 101%;
+    padding: 10px;
+}
