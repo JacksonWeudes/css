@@ -1,0 +1,282 @@
+@charset "UTF-8";
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    z-index: 1000;
+    color: #fd2b2b;
+    background: #000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px;
+}
+
+.enter-button {
+    padding: 10px;
+}
+
+.enter-button button {
+    cursor: pointer;
+    position: relative;
+    width: 90px;
+    height: 35px;
+
+    border: none;
+    border-radius: 40px;
+
+    font-weight: 500;
+    color: #fff;
+    z-index: 1;
+}
+
+.enter-button button::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    border-radius: 40px;
+    background: linear-gradient(90deg, #fd2b2b, #b60808);
+    z-index: -1;
+}
+
+main {
+    height: auto;
+    color: #fff;
+    background: linear-gradient(to bottom, #000, #3b0404, #000);
+}
+
+.sign {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 80%;
+    height: 350px;
+    padding: 20px;
+    margin: auto;
+
+    text-align: center;
+
+    border-radius: 15px;
+    background: #000 url(imagens/movies-back.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.sign::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to top, #6e6e6e5e, #000000ea, #0000009f);
+}
+
+.title {
+    margin-block-end: 25px;
+    z-index: 1;
+}
+
+.desc {
+    margin-block-end: 10px;
+    z-index: 1;
+}
+
+.input-form {
+    width: 100%;
+    margin: 10px;
+    z-index: 1;
+}
+
+.input-form input {
+    position: relative;
+    width: 90%;
+    padding: 10px;
+
+    border-radius: 40px;
+    border: 1px solid #727272;
+
+    font-size: 1.2em;
+    background: transparent;
+    mask: ;
+}
+
+.login-button {
+    width: 100%;
+    z-index: 1;
+}
+
+.login-button button {
+    position: relative;
+    cursor: pointer;
+    width: 96%;
+    padding: 10px;
+
+    border-radius: 40px;
+    border: none;
+
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #fff;
+    background: #b60808;
+}
+
+.more {
+    width: 80%;
+    margin: auto;
+    margin-block-start: 15px;
+    padding: 20px;
+
+    border-radius: 15px;
+    border: 1px solid #000;
+}
+
+.more h2, p {
+    font-size: 1em;
+    padding: 5px;
+}
+
+.more button {
+    width: 100px;
+    height: 30px;
+    margin: 10px 0 0 0;
+
+    border: none;
+    border-radius: 40px;
+    outline: none;
+
+    cursor: pointer;
+}
+
+.trend {
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+
+    border: 1px solid #000;
+}
+
+.trend-title {
+    padding: 20px 20px 10px 20px;
+}
+
+.item {
+    width: 110px;
+    height: 200px;
+
+    text-align: center;
+    line-height: 200px;
+
+    border-radius: 15px;
+    border: 1px solid #000;
+}
+
+.motives-title {
+    margin: 20px 20px 10px 20px;
+}
+
+.motives {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    border: 1px solid #000;
+}
+
+.mot {
+    width: 80%;
+    height: 150px;
+    padding: 10px;
+
+    border-radius: 15px;
+    border: 1px solid #000;
+}
+
+.late-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    height: 200px;
+    padding: 10px;
+    border: 1px solid #000;
+}
+
+.late-form p, input, button {
+    margin: 10px;
+}
+
+.late-form input {
+    width: 90%;
+    padding: 8px;
+
+    border-radius: 40px;
+    border: none;
+    outline: none;
+
+    font-size: 1.2em;
+}
+
+.late-form button {
+    width: 93%;
+    padding: 8px;
+
+    border-radius: 40px;
+    border: none;
+    outline: none;
+
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+footer {
+    padding: 20px;
+    background: #80006452;
+}
+
+footer p {
+    margin-block: 20px;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer li {
+    margin-block: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #000;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer #logo {
+    text-align: center;
+    font-size: .9em;
+}
