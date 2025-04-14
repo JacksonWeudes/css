@@ -4,6 +4,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 header {
@@ -82,20 +83,122 @@ header {
 
 main {
     background: #0000ff48;
+    height: auto;
 }
 
 #hero {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: end;
     align-items: center;
 
     width: 80%;
     height: 400px;
-    padding: 10px;
+    padding: 20px 15px;
     margin: auto;
 
     text-align: center;
-    border: 1px solid #000000;
+    border-radius: 0 0 10px 10px;
+    
+    color: #fff;
+    background: #000000b4;
 }
 
+#hero-title {
+    margin-block-end: 20px;
+}
+
+#hero .input-box {
+    margin-block-start: 10px;
+}
+
+#hero .input-box p {
+    padding: 10px;
+    font-size: .9em;
+}
+
+#hero .input-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#hero input {
+    padding: 12px;
+    margin: 5px;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    font-size: 1em;
+}
+
+#hero button {
+    cursor: pointer;
+    padding: 12px;
+    margin: 5px;
+
+    border-radius: 40px;
+    border: none;
+    outline: none;
+
+    font-size: 1em;
+    font-weight: 500;
+    color: #fff;
+}
+
+#promo {
+    width: 80%;
+    padding: 15px;
+    margin: auto;
+    margin-block: 20px;
+
+    border-radius: 10px;
+    border: 1px solid #000000;
+    transition: 0.4s ease-in-out;
+}
+
+#promo h2 {
+    font-size: 1.1em;
+    margin-block-end: 10px;
+}
+
+#promo button {
+    width: 120px;
+    padding: 10px;
+    margin-block-start: 15px;
+
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    font-weight: 500;
+    color: #fff;
+}
+
+#promo:hover {
+    transform: scale(1.04);
+}
+
+#trending h2 {
+    text-align: center;
+    margin-block: 20px;
+}
+
+#card-list {
+    list-style: none;
+}
+
+#card-item {
+    user-select: none;
+    height: 250px;
+    margin: auto;
+    margin-inline: 10px;
+
+    text-align: center;
+    line-height: 250px;
+    font-size: 2em;
+
+    border-radius: 10px;
+    color: #fff;
+    background: #000000a2;
+}
