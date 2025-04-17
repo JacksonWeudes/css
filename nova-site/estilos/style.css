@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+body {
+    color: #e0e0e0;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -92,6 +96,7 @@ main {
 }
 
 #hero {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -106,7 +111,22 @@ main {
     border-radius: 0 0 10px 10px;
     
     color: #fff;
-    background: #778DA9;
+    background: #000 url(../imagens/movies-back.jpg) no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+
+#hero::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: linear-gradient(
+        to bottom, #000000c4, #00000093, #00000075, #3b3b3bb7
+    );
 }
 
 #hero-title {
@@ -130,13 +150,27 @@ main {
 .input-box input {
     padding: 12px;
     margin: 5px;
+
     border-radius: 40px;
-    border: none;
+    border: 1px solid #a8a8a8;
     outline: none;
+
     font-size: 1em;
+    color: #ebe8e8;
+
+    background: #585858e3;
+}
+
+.input-box input::placeholder {
+    color: #c2c2c2;
+}
+
+.input-box input:focus {
+    outline: 1px solid #fff;
 }
 
 .input-box button {
+    position: relative;
     cursor: pointer;
     padding: 12px;
     margin: 5px;
@@ -148,6 +182,22 @@ main {
     font-size: 1em;
     font-weight: 500;
     color: #fff;
+    z-index: 1;
+}
+
+.input-box button::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    z-index: -1;
+    border-radius: 40px;
+    background: linear-gradient(
+        40deg,  #060652,  #3030bb, #4e4ebe
+    );
 }
 
 #promo {
@@ -158,26 +208,11 @@ main {
     margin-block: 20px;
 
     border-radius: 10px;
-    color: #fff;
-    background: #000000;
-    transition: 0.4s ease-in-out;
-}
+    border: 1px solid #a8a8a8;
 
-#promo::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: conic-gradient(
-        #0f2670, #193eb8, #1a42d3, #112770
-    );
-    z-index: -1;
-    padding: 3px ;
-    border-radius: 10px;
-    pointer-events: none;
+    background: #ffffff26;
+    backdrop-filter: blur(10px);
+    transition: 0.4s ease-in-out;
 }
 
 #promo h2 {
@@ -191,12 +226,19 @@ main {
     margin-block-start: 15px;
 
     border-radius: 40px;
-    border: none;
+    border: 2px solid #a8a8a8;
     outline: none;
     cursor: pointer;
 
     font-weight: 500;
     color: #fff;
+    background: transparent;
+    transition: 0.3s ease;
+}
+
+#promo button:hover {
+    color: #000;
+    background-color: #e0e0e0;
 }
 
 #promo:hover {
@@ -206,6 +248,7 @@ main {
 #trending h2 {
     text-align: center;
     margin-block: 20px;
+    color: #f5f4f4;
 }
 
 .scroll-container {
@@ -248,16 +291,17 @@ main {
     margin-block: 10px;
 
     border-radius: 10px;
-    border: 1px solid #000000;
+    border: 1px solid #a8a8a8;
 
-    color: #fff;
-    background: #000000be;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
 }
 
 .benefit-item h3 {
     font-size: 1em;
     font-weight: 500;
     margin-block-end: 15px;
+    color: #fff;
 }
 
 #sign-up-end .input-box {
@@ -271,7 +315,6 @@ main {
     margin: auto;
     padding: 30px 5px;
     margin-block: 30px;
-    border: 1px solid #000000;
 }
 
 #sign-up-end .input-box p {
